@@ -7,9 +7,12 @@ tasks:
     become_user: root
    
     pkg:
-      - httpd
-      - mysql
-      - Php
+      - |
+        httpd
+      - |
+        mysql
+      - |
+        Php
       state: present
       update_cache: yes
 
