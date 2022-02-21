@@ -1,11 +1,10 @@
 #Setup LAMP Stack
 version: 0.0
 os: linux
-tasks:
-  pkg:
-    - httpd
-    - mysql
-    - Php
+pkg:
+  - httpd
+  - mysql
+  - Php
      
   - name: create target directory
     file: path=/var/www/html state=directory mode=0755
