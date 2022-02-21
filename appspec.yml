@@ -17,7 +17,7 @@ tasks:
   - name: start apache service
     become: yes
     become_user: root
-     service:
+    service:
        name: httpd
        state: started
        enabled: yes
