@@ -1,0 +1,4 @@
+- name: Install Mysql
+  become: true
+  command: sudo yum apt install mysql-server
+  
