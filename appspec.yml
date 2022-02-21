@@ -7,10 +7,10 @@ tasks:
     become_user: root
     yum:
       pkg:
-         - httpd
-         - mariadb-server
-         - php
-         - php-mysql
+        - httpd
+        - mariadb-server
+        - php
+        - php-mysql
       state: present
       update_cache: yes
 
@@ -18,17 +18,17 @@ tasks:
     become: yes
     become_user: root
     service:
-       name: httpd
-       state: started
-       enabled: yes
+      name: httpd
+      state: started
+      enabled: yes
 
   - name: start mysql service
     become: yes
     become_user: root
     service:
-       name: mariadb
-       state: started
-       enabled: yes
+      name: mariadb
+      state: started
+      enabled: yes
 
   - name: create target directory
     file: path=/var/www/html state=directory mode=0755
