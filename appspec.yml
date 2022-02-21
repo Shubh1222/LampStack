@@ -2,16 +2,12 @@
 version: 0.0
 os: linux
 tasks:
-  - name: install lamp stack
-    become: yes
-    become_user: root
-    
-  - pkg:
-     - httpd
-     - mysql
-     - Php
-     state: present
-     update_cache: yes
+  pkg:
+    - httpd
+    - mysql
+    - Php
+      state: present
+      update_cache: yes
     
   - name: create target directory
     file: path=/var/www/html state=directory mode=0755
