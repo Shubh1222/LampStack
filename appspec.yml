@@ -1,7 +1,7 @@
 # Setup LAMP Stack
 version: 0.0
 os: linux
-  tasks:
+tasks:
     - name: install lamp stack
       become: yes
       become_user: root
