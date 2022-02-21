@@ -5,17 +5,17 @@ tasks:
   - name: install lamp stack
     become: yes
     become_user: root
-   
+    
   - pkg:
      - httpd
      - mysql
      - Php
-      state: present
-      update_cache: yes
-
+     state: present
+     update_cache: yes
+    
   - name: create target directory
     file: path=/var/www/html state=directory mode=0755
-
+    
   - name: deploy index.html
     become: yes
     become_user: root
