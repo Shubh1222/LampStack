@@ -2,8 +2,8 @@
 version: 0.0
 os: linux
 files:
-  - source: ./
-    destination: /var/www/html
+  - source: /
+    destination: /var/www/html/admin_panel_backend
     overwrite: yes
 hooks:
   ApplicationStart:
