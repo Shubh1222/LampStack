@@ -1,3 +1,0 @@
-- name: Install apache2
-  become: true
-  command: install -y httpd
