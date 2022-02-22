@@ -1,20 +1,17 @@
 #Setup LAMP Stack
 version: 0.0
 os: linux
-pkg:
-  - httpd
-  - mysql
-  - Php
-     
-  - name: create target directory
-    file: path=/var/www/html state=directory mode=0755
-    
-  - name: deploy index.html
-    become: yes
-    become_user: root
-    copy:
-      src: index.html
-      dest: /var/www/html/index.html
+files:
+  - source: /index.html
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
 
 
     
