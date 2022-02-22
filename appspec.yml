@@ -3,7 +3,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/html/admin_panel_backend
+    destination: /var/www/html/
     overwrite: yes
 hooks:
   ApplicationStart:
