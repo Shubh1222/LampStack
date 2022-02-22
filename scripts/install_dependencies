@@ -1,3 +1,2 @@
 #!/bin/sh
-cd /home/ec2-user/
-yum install -y httpd
+sudo yum install -y httpd
