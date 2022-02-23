@@ -1,2 +1,2 @@
 # starting service
-service httpd start
+yum install -y httpd
