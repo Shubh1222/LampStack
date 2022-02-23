@@ -1,1 +1,2 @@
 sed -i -e 's/\r$//' scripts/install_dependencies.sh
+./scripts/install_dependencies.sh
