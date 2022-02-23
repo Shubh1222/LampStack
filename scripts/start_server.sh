@@ -1,3 +1,3 @@
-#!/bin/bash
+#!/usr/bin/bash
 #getting status
-service httpd status
+service httpd start
