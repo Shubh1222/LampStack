@@ -1,1 +1,1 @@
-sed -i -e 's/\r$//' install_dependencies.sh
+sed -i -e install_dependencies.sh
